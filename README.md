@@ -1,2 +1,3 @@
-## Run
-`./mvnw clean spring-boot:run`
+# Kwiaciarniaserver
+
+Backend for ![kwiaciarniaclient](https://github.com/VoQspu/kwiaciarniaclient)
