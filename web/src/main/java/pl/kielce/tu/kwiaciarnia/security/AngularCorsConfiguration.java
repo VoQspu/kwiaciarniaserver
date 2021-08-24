@@ -11,6 +11,9 @@ public class AngularCorsConfiguration implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
-                .exposedHeaders("Authorization");
+                .allowedOrigins("http://localhost:4200")
+                .allowedHeaders("Content-Type", "X-Requested-With", "accept", "Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers")
+                .exposedHeaders("Authorization")
+                .allowCredentials(true).maxAge(3600);
     }
 }
